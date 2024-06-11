@@ -91,6 +91,9 @@ func main() {
 		panic(err)
 	}
 	slices := strings.Split(inpt, " ")
+	if len(slices) > 3 {
+		panic("Too many arguments!")
+	}
 
 	// discard last two elements "\n\r"
 	num2Tmp := slices[2]
